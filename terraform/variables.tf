@@ -5,3 +5,7 @@ variable "nome_repositorio" {
 variable "cluster_name" {
   type = string
 }
+
+variable "bucket" {
+  type = string
+}
