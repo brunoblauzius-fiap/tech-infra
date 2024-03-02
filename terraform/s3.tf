@@ -1,9 +1,9 @@
 resource "aws_s3_bucket" "teste-bucket" {
 
-  bucket = "tf-braubrau-bucket"
+  bucket = var.bucket
 
   tags = {
-    Name        = "My bucket"
+    Name        = "Bucket Fiap Tech"
     Environment = "Dev"
   }
 }
