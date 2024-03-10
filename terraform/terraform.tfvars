@@ -1,3 +1,4 @@
-cluster_name = "fiap-cluster"
-nome_repositorio = "producao"
-bucket = "tf-bruno-b-fiap-bucket"
+CLUSTER_NAME = "fiap-cluster"
+NOME_REPOSITORIO = "producao"
+BUCKET = "tf-bruno-b-fiap-bucket"
+

@@ -2,7 +2,7 @@ module "eks" {
   source  = "terraform-aws-modules/eks/aws"
   version = "~> 20.0"
 
-  cluster_name    = var.cluster_name
+  cluster_name    = var.CLUSTER_NAME
   cluster_version = "1.29"
 
   cluster_endpoint_private_access = true
@@ -29,12 +29,10 @@ module "eks" {
     }
   }
 
-  # Cluster access entry
-  # To add the current caller identity as an administrator
   enable_cluster_creator_admin_permissions = true
 
   # tags = {
-  #   Environment = "dev"
-  #   Terraform   = "true"
+  #     Environment = "dev"
+  #     Terraform   = "true"
   # }
 }

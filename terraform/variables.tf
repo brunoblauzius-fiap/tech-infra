@@ -1,11 +1,16 @@
-variable "nome_repositorio" {
+variable "NOME_REPOSITORIO" {
   type = string
 }
 
-variable "cluster_name" {
+variable "CLUSTER_NAME" {
   type = string
 }
 
-variable "bucket" {
+variable "BUCKET" {
   type = string
+}
+
+variable "REGION" {
+  type = string
+  default = "us-east-1"
 }
